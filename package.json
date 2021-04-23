@@ -1,0 +1,32 @@
+{
+  "name": "k-cli",
+  "version": "1.0.0",
+  "description": "vue相关脚手架",
+  "main": "index.js",
+  "repository": "https://github.com/Happylife56/k-cli.git",
+  "author": "问心",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "cli"
+  ],
+  "bin": {
+    "k-cli": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "execa": "^5.0.0",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "inquirer": "^8.0.0",
+    "launch-editor": "^2.2.1",
+    "leven": "^3.1.0",
+    "lru-cache": "^6.0.0",
+    "node-ipc": "^9.1.4",
+    "open": "^8.0.5",
+    "ora": "^5.4.0",
+    "semver": "^7.3.5",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
