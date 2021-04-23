@@ -1,9 +1,8 @@
 {
-  "name": "k-cli",
-  "version": "1.0.0",
+  "name": "k-vue-cli",
+  "version": "1.0.6",
   "description": "vue相关脚手架",
   "main": "index.js",
-  "repository": "https://github.com/Happylife56/k-cli.git",
   "author": "问心",
   "license": "MIT",
   "keywords": [
