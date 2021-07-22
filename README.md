@@ -13,6 +13,7 @@ k-cli create 文件夹
 - vue-element
 - vue3-elementPlus
 - vite2-vue3-elementPlus
+- vite-vant
 - 微信小程序
 - taro-vue
 
