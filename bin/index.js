@@ -73,7 +73,6 @@ function camelize(str) {
 // commander passes the Command object itself as options,
 // extract only actual options into a fresh object.
 function cleanArgs(cmd = {}) {
-  console.log('cmd: ', cmd);
   const args = {}
   const { options = [] } = {}
   options.forEach(o => {

@@ -27,5 +27,8 @@
     "ora": "^5.4.0",
     "semver": "^7.3.5",
     "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.31.0"
   }
 }
