@@ -2,12 +2,17 @@ import { createStore } from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
 const routesModules = import.meta.globEager('../views/**/store/*.js');
-const modules = [];
+const modules = {};
 Object.keys(routesModules).forEach((key) => {
-  modules.push(routesModules[key]);
+  console.log('key: ', key.split('/'));
+  const moduleName = key.split('/')[2];
+  modules[moduleName] = {
+    ...routesModules[key].default,
+  };
 });
 
 const store = createStore({
+  modules,
   state: {
     count: 0,
   },
@@ -16,8 +21,8 @@ const store = createStore({
       state.count++;
     },
   },
-  getters: { },
-  actions: { },
+  getters: {},
+  actions: {},
   plugins: [
     createPersistedState({
       storage: window.sessionStorage, // 修改存储的状态
