@@ -1,0 +1,211 @@
+//flex布局样式
+//单轴
+@mixin flex-type ($type1, $type2) {
+  align-items: $type2;
+  display: flex;
+  justify-content: $type1;
+}
+
+//多轴
+@mixin flex-types ($type1, $type2) {
+  align-items: $type2;
+  display: flex;
+  flex-direction: column;
+  justify-content: $type1;
+}
+
+//设置竖直方向
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font-size($size) {
+  font-size: #{$size}px;
+}
+
+@mixin margin($direction, $size) {
+  margin-#{$direction}: #{$size}px;
+}
+
+// 主题色
+$themecolor: #f4364c;
+// 加粗色
+$color333: #333;
+//蓝色
+$bluecolor: #409eff;
+$maincolor: #409eff;
+$color999: #999;
+$colorgray: #97a8be;
+
+.color-33 {
+  color: $color333;
+}
+
+.color-99 {
+  color: $color999;
+}
+
+.color-66 {
+  color: #666;
+}
+
+.color-d2 {
+  color: #d2d2d2;
+}
+
+.c-yellow {
+  color: #ffb14d;
+}
+
+.c-red {
+  color: #ff3d3d;
+}
+
+.c-green {
+  color: #66bf4b;
+}
+
+.c-gray {
+  color: $colorgray;
+}
+
+$bgcolor: #ffb14d;
+$borderdivcolor: #d8dce5;
+$bordercolor: #f5f5f5;
+
+//超出显示省略号
+.text-overflow {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//超出显示省略号
+.text-overflow2 {
+  box-orient: vertical;
+  display: box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+//去除浏览器自动填充内容背景颜色为黄色解决方法
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-justify-center {
+  @include flex-type(center, null);
+}
+
+.flex-align-center {
+  @include flex-type(null, center);
+}
+
+.flex-center {
+  @include flex-type(center, center);
+}
+
+.flex-between {
+  @include flex-type(space-between, center);
+}
+
+.flexs-justify-center {
+  @include flex-types(center, null);
+}
+
+.flexs-align-center {
+  @include flex-types(null, center);
+}
+
+.flexs-center {
+  @include flex-types(center, center);
+}
+
+.flexs-between {
+  @include flex-types(space-between, center);
+}
+
+
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}

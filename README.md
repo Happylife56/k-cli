@@ -10,10 +10,11 @@ k-cli create 文件夹
 
 #### 2. 选择你需要的模板
 
-- vue-element
+- vue2-element
 - vue3-elementPlus
-- vite2-vue3-elementPlus
+- vite-vue-elementPlus
 - vite-vant
+- vite-jest-cypress
 - 微信小程序
 - taro-vue
 

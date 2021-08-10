@@ -4,7 +4,6 @@ import createPersistedState from 'vuex-persistedstate';
 const routesModules = import.meta.globEager('../views/**/store/*.js');
 const modules = {};
 Object.keys(routesModules).forEach((key) => {
-  console.log('key: ', key.split('/'));
   const moduleName = key.split('/')[2];
   modules[moduleName] = {
     ...routesModules[key].default,
