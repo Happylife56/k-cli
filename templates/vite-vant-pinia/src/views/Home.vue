@@ -2,7 +2,6 @@
   <div class="home">
     <van-tabs v-model:active="active" @click-tab="handleSelect">
       <van-tab :title="item.path" v-for="item in menuList" :key="item.path">
-        内容 1
       </van-tab>
     </van-tabs>
     <router-view />
