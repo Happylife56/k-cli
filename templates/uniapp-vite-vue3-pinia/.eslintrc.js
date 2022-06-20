@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     'airbnb-base',
+    './.eslintrc-auto-import.json',
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {

@@ -3,7 +3,7 @@ module.exports = {
   "customSyntax": "postcss-html",
   rules: {
     "selector-max-id": 2,
-    "at-rule-no-unknown": [true, { ignoreAtRules: ["include", "mixin"] }],
+    "at-rule-no-unknown": [true, { ignoreAtRules: ["include", "mixin", "forward"] }],
     "selector-max-compound-selectors": 4, // 允许伪类嵌套4层
     "max-nesting-depth": [
       4,
@@ -17,6 +17,7 @@ module.exports = {
     },
     "no-empty-source": null, // 可以空内容
     "scss/double-slash-comment-whitespace-inside": null, // 注释问题
+    "scss/dollar-variable-pattern": [/^$--/, { "ignore": "global" }], // 忽略$--
     "selector-pseudo-class-no-unknown": [true, { ignorePseudoClasses: ["deep"] }] //忽略未知的伪类选择器 
   },
   "overrides": [

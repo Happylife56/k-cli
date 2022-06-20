@@ -16,6 +16,7 @@ k-cli create 文件夹
 - vite-vue-elementPlus-pinia
 - uniapp-vite-vue3-pinia
 - vite-vant
+- vite-vant-pinia
 - vite-jest-cypress
 - 微信小程序
 - taro-vue

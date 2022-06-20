@@ -44,7 +44,7 @@ const title = ref('123');
 }
 
 .text-area {
-  display: flex;
+     display: flex;
   justify-content: center;
 }
 

@@ -5,6 +5,7 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "serve": "vite preview",
+    "clean": "rm -rf node_modules **/*/node_modules",
     "stylelint": "stylelint **/*.vue --fix"
   },
   "dependencies": {
