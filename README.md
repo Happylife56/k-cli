@@ -2,13 +2,19 @@
 
 vue 项目脚手架
 
-#### 1. 使用
+#### 1. 下载
+
+```js
+npm i k-vue-cli -g 
+```
+
+#### 2. 使用
 
 ```js
 k-cli create 文件夹
 ```
 
-#### 2. 选择你需要的模板
+#### 3. 选择你需要的模板
 
 - vue2-element
 - vue3-elementPlus
@@ -21,7 +27,7 @@ k-cli create 文件夹
 - 微信小程序
 - taro-vue
 
-#### 3. 创建成功
+#### 4. 创建成功
 
 ```js
 cd 文件夹
