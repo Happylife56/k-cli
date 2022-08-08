@@ -46,6 +46,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
   },
   globals: {
+    uni: true,
     // 配置全局变量,
     // 场景: 第三方库中的全局变量(如jq, uni-app...), 如果不配置, 会提示 `使用未定义变量` 错误
     // 配置: ↓ 参考这里, 假设jQuery中的$是全局变量, 就新增配置 `$: true` (以下为例子,可删除)

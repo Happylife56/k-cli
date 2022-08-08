@@ -31,7 +31,7 @@ export default ({ mode }) => defineConfig({
     port: 8088, // 配置启用的端口号
     proxy: {
       '/api': {
-        // target: 'http://xxxx.com.cn', // 测试
+        target: 'http://xxx.com.cn', // 测试
         changeOrigin: true,
       },
     },

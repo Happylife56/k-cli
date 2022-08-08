@@ -21,4 +21,12 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  server: {
+    proxy: {
+      '/api': {
+        // target: 'http://xxxx.com.cn', // 测试
+        changeOrigin: true,
+      },
+    },
+  },
 });
